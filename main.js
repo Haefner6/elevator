@@ -21,8 +21,7 @@ function initializeElevators (numberOfElevators = 1) {
 function initializeSimulation (numberOfElevators = 1, numberOfFloors = 1) {
 
     const elevators = initializeElevators(numberOfElevators);
-    const floors = initializeFloors(numberOfFloors);
-
+    const floors = initializeFloors(numberOfFloors, elevators);
 
 }
 

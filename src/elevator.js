@@ -14,7 +14,10 @@ class Elevator {
 
     }
 
-    
+    move() {
+
+        
+    }
 
 
 

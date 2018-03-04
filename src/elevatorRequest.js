@@ -5,6 +5,22 @@ class ElevatorRequest {
             
     }
 
+    requestUp () {
+        
+    }
+
+    requestDown () {
+
+    }
+
+    reportCurrentFloor () {
+
+    }
+
+    reportDoorOpen() {
+
+    }
+
     
 }
 
