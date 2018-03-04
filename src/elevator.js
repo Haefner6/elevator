@@ -14,14 +14,23 @@ class Elevator {
 
     }
 
+    
+
+
+
     floorsRequest () {
 
 
         if (this.requestedFloorNumbers.length > 0) {
+            if (this.direction === 'up') {
+                this.requestedFloorNumbers.sort();
+            } else {
+                this.requestedFloorNumbers.sort();
+            }
             this.closeDoors();
             this.requestedFloorNumbers.forEach(floorNumber => {
                 this.moveToFloor(floorNumber);
-            })
+            });
         }
     }
 
@@ -30,12 +39,24 @@ class Elevator {
 
     }
 
+
+
     closeDoors () {
-        
+        if (this.isDoorOpen) {
+            // close door
+        }
     }
 
     openDoors () {
         
+    }
+
+    setDirection(currentFloorNumber, requestFloorNumber) {
+        if (currentFloorNumber > requestFloorNumber) {
+            this.direction = 'down';
+        } else {
+            this.direction = 'up';
+        }
     }
 
     reportStatus() {
