@@ -3,12 +3,12 @@
 
 class Floor {
     
-    constructor() {
-            
+    constructor(number) {
+        this.number = number;
     }
 
 
-    
+
 }
 
 
