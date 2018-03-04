@@ -7,6 +7,8 @@ class Elevator {
         this.numberOfTrips = 0;
         this.floorsPassed = 0;
         this.inMaintenanceMode = false;
+        this.direction = null;
+
     }
 
     reportStatus() {
@@ -26,7 +28,7 @@ class Elevator {
         return false;
     }
 
-    
+
 }
 
 
