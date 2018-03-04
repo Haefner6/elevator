@@ -8,8 +8,8 @@ class Elevator {
         this.floorsPassed = 0;
         this.inMaintenanceMode = false;
         this.direction = null;
-        this.currentFloor = 1;
-        this.requestedFloors = []
+        this.currentFloorNumber = 1;
+        this.requestedFloorNumbers = []
     }
 
     reportStatus() {
@@ -25,7 +25,7 @@ class Elevator {
     }
 
     isOccupied() {
-        if (this.requestedFloors.length > 0) {
+        if (this.requestedFloorNumbers.length > 0) {
             return true;
         }
         return false;
