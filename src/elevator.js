@@ -10,6 +10,32 @@ class Elevator {
         this.direction = null;
         this.currentFloorNumber = 1;
         this.requestedFloorNumbers = []
+        this.isDoorOpen = false;
+
+    }
+
+    floorsRequest () {
+
+
+        if (this.requestedFloorNumbers.length > 0) {
+            this.closeDoors();
+            this.requestedFloorNumbers.forEach(floorNumber => {
+                this.moveToFloor(floorNumber);
+            })
+        }
+    }
+
+    moveToFloor (floorNumber) {
+
+
+    }
+
+    closeDoors () {
+        
+    }
+
+    openDoors () {
+        
     }
 
     reportStatus() {
