@@ -1,0 +1,19 @@
+{
+  "name": "elevator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Haefner6/elevator.git"
+  },
+  "author": "Andy Haefner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Haefner6/elevator/issues"
+  },
+  "homepage": "https://github.com/Haefner6/elevator#readme"
+}
